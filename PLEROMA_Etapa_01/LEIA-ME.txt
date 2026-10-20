@@ -1,0 +1,19 @@
+PLÉROMA | ETAPA 1 — Página inicial
+
+Base visual: portfólio público Logan Lucky (fundo escuro, detalhes laranja, Poppins, hero em duas colunas, cards e menu horizontal).
+
+Arquivos:
+- index.html : conteúdo e seções
+- css/style.css : aparência, cores, layout e responsividade
+
+Como abrir:
+1. Extraia o ZIP.
+2. Abra a pasta no VS Code.
+3. Abra index.html no navegador (ou com Live Server).
+
+Importante:
+- Este é um protótipo estático. Não há publicações verdadeiras ainda.
+- O trecho bíblico é marcado como trecho; confira a tradução de preferência antes de publicar.
+- Menus com âncoras levam para seções da própria página.
+- Não alteramos o portfólio original.
+- Próxima etapa sugerida: cadastrar a primeira pregação real com fonte, data e passagem bíblica.

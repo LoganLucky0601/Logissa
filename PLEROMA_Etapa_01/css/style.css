@@ -1,0 +1,87 @@
+/* ====================================================
+   PLÉROMA — ETAPA 1
+   Visual inspirado no portfólio pessoal de Logan Lucky.
+   HTML + CSS simples, sem bibliotecas ou JavaScript.
+   ==================================================== */
+
+/* 1. CORES E MEDIDAS: altere aqui a identidade do site */
+:root { --fundo:#0b0d12; --painel:#11151e; --painel-2:#161b25; --texto:#f8f8fb; --suave:#a7acb8; --laranja:#ff873c; --linha:#282e39; --largura:1120px; }
+
+/* 2. RESET: evita diferenças de espaçamento entre navegadores */
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--fundo); color:var(--texto); font-family:'Poppins',Arial,sans-serif; line-height:1.7; }
+a { color:inherit; text-decoration:none; }
+.container { width:min(90%,var(--largura)); margin:auto; }
+.section { padding:95px 0; }
+.section-muted { background:var(--painel); }
+h1,h2,h3,p { margin-top:0; }
+h2 { font-size:clamp(1.85rem,3.3vw,2.7rem); line-height:1.3; }
+h2 span,h1 span,.logo span { color:var(--laranja); }
+.section-kicker,.eyebrow,.card-tag { color:var(--laranja); font-size:.76rem; font-weight:700; letter-spacing:2px; }
+.pular { position:absolute; left:-9999px; }
+.pular:focus { left:10px; top:10px; background:#fff; color:#111; padding:10px; z-index:20; }
+:focus-visible { outline:2px solid var(--laranja); outline-offset:4px; }
+
+/* 3. CABEÇALHO E MENU */
+.site-header { position:sticky; top:0; z-index:10; background:rgba(11,13,18,.94); border-bottom:1px solid var(--linha); }
+.header-inner,.menu,.hero-actions,.hero-tags,.footer-inner { display:flex; align-items:center; }
+.header-inner { justify-content:space-between; min-height:84px; gap:20px; }
+.logo { font-size:1.45rem; font-weight:800; letter-spacing:1px; }
+.menu { list-style:none; gap:25px; margin:0; padding:0; }
+.menu a,.site-footer a { font-size:.88rem; color:var(--suave); transition:color .2s; }
+.menu a:hover,.site-footer a:hover { color:var(--laranja); }
+.btn { display:inline-block; padding:13px 22px; font-weight:600; font-size:.88rem; border-radius:8px; transition:transform .2s,background .2s; text-align:center; }
+.btn:hover { transform:translateY(-3px); }
+.btn-primary { background:var(--laranja); color:#17110f; }
+.btn-outline { border:1px solid var(--linha); color:var(--texto); }
+.btn-outline:hover { border-color:var(--laranja); }
+
+/* 4. APRESENTAÇÃO: duas colunas, como no portfólio */
+.hero { display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:55px; min-height:640px; padding-top:75px; padding-bottom:80px; }
+.hero h1 { font-size:clamp(2.4rem,5.1vw,4.2rem); line-height:1.18; letter-spacing:-1.7px; margin:20px 0; }
+.hero-description { color:var(--suave); max-width:570px; font-size:1.02rem; }
+.status-dot { display:inline-block; width:8px; height:8px; border-radius:100%; background:var(--laranja); margin-right:7px; box-shadow:0 0 16px var(--laranja); }
+.hero-actions { gap:12px; flex-wrap:wrap; margin-top:28px; }
+.hero-tags { gap:12px; flex-wrap:wrap; margin-top:33px; }
+.hero-tags span { color:var(--suave); border:1px solid var(--linha); border-radius:30px; padding:5px 12px; font-size:.75rem; }
+.hero-visual { position:relative; min-height:380px; display:grid; place-items:center; }
+.glow { position:absolute; width:290px; height:290px; background:var(--laranja); filter:blur(110px); opacity:.22; border-radius:50%; }
+.verse-card { position:relative; width:min(100%,380px); padding:48px 35px; border:1px solid #5c402f; border-radius:24px; background:linear-gradient(145deg,#24202a,#121720); box-shadow:0 22px 80px #0008; }
+.verse-icon { display:block; color:var(--laranja); font-size:3.5rem; line-height:1; margin-bottom:25px; }
+.verse-label { font-size:.7rem; font-weight:700; letter-spacing:2px; color:var(--laranja); }
+.verse-card p { font-size:1.55rem; font-weight:600; line-height:1.55; margin:18px 0 22px; }
+.verse-card small { color:var(--suave); }
+
+/* 5. SEÇÃO SOBRE: texto em duas colunas */
+.about-layout { display:grid; grid-template-columns:1fr 1fr; gap:70px; }
+.about-text p,.featured-info p,.content-card p,.contact p { color:var(--suave); }
+
+/* 6. MENSAGEM EM DESTAQUE */
+.featured-card { display:grid; grid-template-columns:1fr 1.1fr; overflow:hidden; border:1px solid var(--linha); border-radius:18px; margin-top:32px; background:var(--painel); }
+.featured-art { padding:65px 45px; background:radial-gradient(circle at 25% 30%,#60341c,#201b20 60%,#10141a); display:flex; flex-direction:column; justify-content:space-between; min-height:330px; }
+.featured-art span { font-size:.78rem; letter-spacing:3px; color:#ffad77; }
+.featured-art strong { font-size:clamp(2rem,3vw,3rem); line-height:1.15; }
+.featured-info { padding:45px; align-self:center; }
+.featured-info h3 { font-size:1.65rem; line-height:1.35; }
+.text-link { color:var(--laranja); font-weight:600; font-size:.88rem; }
+
+/* 7. CARDS: mesma lógica do grid de projetos */
+.cards-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; margin-top:32px; }
+.content-card { padding:32px; border:1px solid var(--linha); border-radius:16px; background:var(--painel-2); transition:transform .2s,border-color .2s; }
+.content-card:hover { transform:translateY(-5px); border-color:#805236; }
+.card-symbol { color:var(--laranja); font-size:2rem; margin-bottom:18px; }
+.content-card h3 { font-size:1.35rem; margin-bottom:10px; }
+.content-card a,.content-card span { color:var(--laranja); font-size:.87rem; font-weight:600; }
+
+/* 8. CONTATO E RODAPÉ */
+.contact p { max-width:700px; }
+.contact .btn { margin-top:18px; }
+.site-footer { border-top:1px solid var(--linha); padding:25px 0; color:var(--suave); font-size:.8rem; }
+.footer-inner { justify-content:space-between; gap:20px; }
+
+/* 9. RESPONSIVIDADE: adapta o site para celulares e tablets */
+@media(max-width:980px) { .header-inner { flex-wrap:wrap; padding:16px 0; } .header-cta { display:none; } .hero { gap:20px; } }
+@media(max-width:700px) { .header-inner { align-items:flex-start; } .menu { gap:13px; flex-wrap:wrap; } .menu a { font-size:.77rem; } .hero,.about-layout,.featured-card { grid-template-columns:1fr; } .hero { padding:55px 0; } .hero-visual { min-height:300px; } .section { padding:65px 0; } .cards-grid { grid-template-columns:1fr; } .featured-info { padding:30px; } .footer-inner { flex-direction:column; text-align:center; } }
+@media(max-width:420px) { .hero h1 { font-size:2.3rem; } .verse-card { padding:35px 25px; } .content-card { padding:25px; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; } }
