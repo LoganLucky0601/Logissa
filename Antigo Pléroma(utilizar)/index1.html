@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas: acentos, adaptação ao celular e descrição do site. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Logan Lucky: desenvolvimento web, automação e soluções digitais.">
+    <title>À Luz da verdade | Pléroma</title>
+
+    <!-- Fonte Poppins do Google Fonts e arquivo de estilos do projeto. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css1/style1.css">
+</head>
+<body>
+    <!-- CABEÇALHO: logo, menu que leva às seções e botão de contato. -->
+    <header class="site-header">
+        <a class="logo" href="#inicio" aria-label="Logan - voltar ao início">PLÉROMA</a>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#certificacoes">Certificações</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#Outros">Outros</a></li>
+
+            </ul>
+        </nav>
+
+        <a href="#contato" class="btn-header">Fale Comigo</a>
+    </header>
+
+    <!-- MAIN: contém o conteúdo principal da página. -->
+    <main>
+        <!-- INÍCIO: apresentação, botões, números e fotografia. -->
+        <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+            <div class="hero-text">
+                <span>Olá, eu sou</span>
+                <h2>Logan Lucky</h2>
+                <h1 id="titulo-principal">Desenvolvedor Full Stack</h1>
+                <p>Especializado em desenvolvimento web, automação de processos, Inteligência Artificial e soluções digitais modernas.</p>
+
+                <!-- O primeiro botão vai ao contato; o segundo baixa o currículo. -->
+                <div class="botoes">
+                    <a href="#contato" class="btn-primary">Contratar</a>
+                    <!-- Coloque seu currículo na pasta arquivos com o nome curriculo.pdf. -->
+                    <a href="arquivos/curriculo.pdf" class="btn-secondary" download>Download CV</a>
+                </div>
+
+                <!-- Indicadores de exemplo: substitua pelos seus dados reais. -->
+                <div class="stats" aria-label="Indicadores profissionais ilustrativos">
+                    <div class="card">
+                        <h3>3K+</h3>
+                        <p>Conteúdos</p>
+                    </div>
+                    <div class="card">
+                        <h3>300+</h3>
+                        <p>Materiais</p>
+                    </div>
+                    <div class="card">
+                        <h3>50mil+</h3>
+                        <p>Usuários</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO: glow é o brilho alaranjado atrás da imagem. -->
+            <div class="hero-image">
+                <div class="glow" aria-hidden="true"></div>
+                <!-- Coloque sua foto em img/Eu.png. Se faltar, a imagem é escondida. -->
+                <img src="Imagem/Eu.png" alt="Foto de Logan Lucky" onerror="this.hidden=true;this.parentElement.classList.add('sem-foto')">
+            </div>
+        </section>
+
+        <!-- SOBRE: espaço para sua trajetória e apresentação. -->
+        <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+            <h2 id="titulo-sobre">Sobre Mim</h2>
+            <p>Escreva aqui sua apresentação profissional, trajetória, experiência e objetivos.</p>
+        </section>
+
+        <!-- HABILIDADES: tecnologias que você conhece. -->
+        <section id="habilidades" class="secao" aria-labelledby="titulo-habilidades">
+            <h2 id="titulo-habilidades">Habilidades</h2>
+            <div class="grid habilidades-grid">
+                <div class="box">HTML</div>
+                <div class="box">CSS</div>
+                <div class="box">JavaScript</div>
+                <div class="box">Python</div>
+                <div class="box">SQL</div>
+                <div class="box">IA Generativa</div>
+            </div>
+        </section>
+
+        <!-- PROJETOS: troque os exemplos pelos seus projetos. -->
+        <section id="projetos" class="secao" aria-labelledby="titulo-projetos">
+            <h2 id="titulo-projetos">Projetos</h2>
+            <div class="grid">
+                <div class="box">Projeto 01</div>
+                <div class="box">Projeto 02</div>
+                <div class="box">Projeto 03</div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS: tipos de trabalho que você oferece. -->
+        <section id="servicos" class="secao" aria-labelledby="titulo-servicos">
+            <h2 id="titulo-servicos">Serviços</h2>
+            <div class="grid">
+                <div class="box">Desenvolvimento Web</div>
+                <div class="box">Automação</div>
+                <div class="box">Consultoria</div>
+            </div>
+        </section>
+
+        <!-- CERTIFICAÇÕES: substitua pelas certificações que você possui. -->
+        <section id="certificacoes" class="secao" aria-labelledby="titulo-certificacoes">
+            <h2 id="titulo-certificacoes">Certificações</h2>
+            <div class="grid">
+                <div class="box">Microsoft</div>
+                <div class="box">AWS</div>
+                <div class="box">Google</div>
+            </div>
+        </section>
+
+        <!-- CONTATO: atualize e-mail, LinkedIn, GitHub e WhatsApp. -->
+        <section id="contato" class="secao" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Contato</h2>
+            <div class="contato-info">
+                <p>📧 <a href="mailto:email@exemplo.com">email@exemplo.com</a></p>
+                <p>💼 LinkedIn — adicione seu perfil</p>
+                <p>💻 GitHub — adicione seu perfil</p>
+                <p>📱 WhatsApp — adicione seu número</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ: mensagem de direitos autorais ao final da página. -->
+    <footer>
+        <p>© 2026 Logan Lucky. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
