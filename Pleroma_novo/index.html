@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="PLÉROMA — fé, Palavra e propósito.">
+    <title>PLÉROMA | Fé que transborda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <!-- O cabeçalho fica fora da área dinâmica: nunca é substituído nas navegações. -->
+    <header class="site-header" id="inicio">
+      <div class="container header-inner">
+        <a href="#inicio" class="logo" data-pagina="inicio" aria-label="PLÉROMA — voltar à página inicial">PLÉROMA<span>.</span></a>
+        <nav aria-label="Menu principal">
+          <ul class="menu">
+            <li>
+              <a href="#sobre" data-pagina="sobre">Sobre</a>
+            </li>
+            <li class="menu-com-submenu">
+              <details class="dropdown">
+                <summary>Pregações ▾</summary>
+                <ul class="submenu">
+                  <li>
+                    <a href="#pregacoes/temas" data-pagina="pregacoes/temas">Por temas</a>
+                  </li>
+                  <li>
+                    <a href="#pregacoes/pregadores" data-pagina="pregacoes/pregadores">Por pregador</a>
+                  </li>
+                  <li>
+                    <a href="#pregacoes/recentes" data-pagina="pregacoes/recentes">Mais recentes</a>
+                  </li>
+                  <li>
+                    <a href="#pregacoes/ao-vivo" data-pagina="pregacoes/ao-vivo">Ao vivo / Transmissões</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-com-submenu">
+              <details class="dropdown">
+                <summary>Devocionais ▾</summary>
+                <ul class="submenu">
+                  <li>
+                    <a href="#devocionais/diario" data-pagina="devocionais/diario">Devocional diário</a>
+                  </li>
+                  <li>
+                    <a href="#devocionais/planos" data-pagina="devocionais/planos">Planos de leitura</a>
+                  </li>
+                  <li>
+                    <a href="#devocionais/audios" data-pagina="devocionais/audios">Áudios e podcasts</a>
+                  </li>
+                  <li>
+                    <a href="#devocionais/artigos" data-pagina="devocionais/artigos">Artigos e reflexões</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-com-submenu">
+              <details class="dropdown">
+                <summary>Biblioteca ▾</summary>
+                <ul class="submenu">
+                  <li>
+                    <a href="#biblioteca/ebooks" data-pagina="biblioteca/ebooks">E-books e livros</a>
+                  </li>
+                  <li>
+                    <a href="#biblioteca/estudos" data-pagina="biblioteca/estudos">Materiais de estudo</a>
+                  </li>
+                  <li>
+                    <a href="#biblioteca/artes" data-pagina="biblioteca/artes">Infográficos e wallpapers</a>
+                  </li>
+                  <li>
+                    <a href="#biblioteca/musicas" data-pagina="biblioteca/musicas">Músicas e cânticos</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-com-submenu">
+              <details class="dropdown">
+                <summary>Materiais ▾</summary>
+                <ul class="submenu">
+                  <li>
+                    <a href="#materiais/apostilas" data-pagina="materiais/apostilas">Apostilas e PDFs</a>
+                  </li>
+                  <li>
+                    <a href="#materiais/roteiros" data-pagina="materiais/roteiros">Roteiros de estudo</a>
+                  </li>
+                  <li>
+                    <a href="#materiais/guias" data-pagina="materiais/guias">Guias de leitura</a>
+                  </li>
+                  <li>
+                    <a href="#materiais/anotacoes" data-pagina="materiais/anotacoes">Anotações</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </nav>
+        <!-- A entrada é pública; somente a conta autorizada verá ferramentas administrativas. -->
+        <a class="btn btn-outline header-cta" href="#entrar" data-pagina="entrar" id="botao-conta">Entrar</a>
+      </div>
+    </header>
+    <!-- SOMENTE o conteúdo deste main muda. Cabeçalho e rodapé permanecem intactos. -->
+    <main id="conteudo" tabindex="-1" aria-live="polite"></main>
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>© 2026 PLÉROMA. Projeto em desenvolvimento.</span><a href="#inicio" data-pagina="inicio">Voltar ao início ↑</a></div>
+    </footer>
+    <!-- Templates reutilizam a aparência original e deixam o HTML claro. -->
+    <template id="pagina-inicial">
+      <section class="hero container" aria-labelledby="titulo-principal">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot"></span> FÉ • PALAVRA • PROPÓSITO</p>
+          <h1 id="titulo-principal">A Palavra não termina <span>no domingo.</span></h1>
+          <p class="hero-description">Um espaço para aprofundar mensagens, refletir sobre as Escrituras e levar os ensinamentos de Cristo para cada dia da semana.</p>
+          <div class="hero-actions"><a href="#pregacoes/recentes" data-pagina="pregacoes/recentes" class="btn btn-primary">Explorar pregações ↗</a><a href="#sobre" data-pagina="sobre" class="btn btn-outline">Conhecer o projeto</a></div>
+          <div class="hero-tags"><span>Pregações</span><span>Devocionais</span><span>Estudos bíblicos</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow"></div>
+          <div class="verse-card">
+            <span class="verse-icon">✦</span>
+            <span class="verse-label">A NOSSA INSPIRAÇÃO</span>
+            <p id="versiculo-texto">“...para que sejais tomados de toda a plenitude de Deus.”</p>
+            <small id="versiculo-referencia">Efésios 3:19 (trecho)</small>
+          </div>
+        </div>
+      </section>
+      <section class="section section-muted">
+        <div class="container about-layout">
+          <div>
+            <p class="section-kicker">01 / SOBRE O PROJETO</p>
+            <h2>Conhecimento que <span>se transforma em vida.</span></h2>
+          </div>
+          <div class="about-text">
+            <p>O PLÉROMA reúne pregações e estudos para compreender, meditar e praticar a Palavra.</p>
+            <p>A MINC é uma fonte prioritária, acompanhada de conteúdos de outras igrejas, sempre com indicação das fontes.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <p class="section-kicker">02 / EM DESTAQUE</p>
+          <h2>Mensagem <span>da semana</span></h2>
+          <article class="featured-card">
+            <div class="featured-art"><span>PLÉROMA</span><strong>Da mensagem<br>à prática.</strong></div>
+            <div class="featured-info">
+              <p class="eyebrow">PRÓXIMA PUBLICAÇÃO</p>
+              <h3>Uma nova mensagem para aprofundarmos juntos</h3>
+              <p>Em breve, uma pregação com contexto, pregador, igreja e referência ao vídeo original.</p>
+              <span class="text-link">Conteúdo em preparação ↗</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section section-muted">
+        <div class="container">
+          <p class="section-kicker">03 / EXPLORE</p>
+          <h2>Caminhos para <span>aprofundar sua fé</span></h2>
+          <div class="cards-grid">
+            <article class="content-card">
+              <div class="card-symbol">✝</div>
+              <p class="card-tag">MENSAGENS</p>
+              <h3>Pregações</h3>
+              <p>Estude mensagens organizadas por temas, pregadores e data.</p>
+              <a href="#pregacoes/temas" data-pagina="pregacoes/temas">Explorar ↗</a>
+            </article>
+            <article class="content-card">
+              <div class="card-symbol">☀</div>
+              <p class="card-tag">ROTINA ESPIRITUAL</p>
+              <h3>Devocionais</h3>
+              <p>Leituras, áudios e planos para o cotidiano.</p>
+              <a href="#devocionais/diario" data-pagina="devocionais/diario">Explorar ↗</a>
+            </article>
+            <article class="content-card">
+              <div class="card-symbol">▤</div>
+              <p class="card-tag">CONHECIMENTO</p>
+              <h3>Biblioteca</h3>
+              <p>Estudos, livros, infográficos e música.</p>
+              <a href="#biblioteca/ebooks" data-pagina="biblioteca/ebooks">Explorar ↗</a>
+            </article>
+            <article class="content-card">
+              <div class="card-symbol">✎</div>
+              <p class="card-tag">ARQUIVOS</p>
+              <h3>Materiais</h3>
+              <p>Apostilas, roteiros e guias para estudo.</p>
+              <a href="#materiais/apostilas" data-pagina="materiais/apostilas">Explorar ↗</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section contact">
+        <div class="container">
+          <p class="section-kicker">NOSSO PROPÓSITO</p>
+          <h2>Ouvir. Estudar. <span>Viver.</span></h2>
+          <p>Incentivar o estudo e a prática da Palavra, sem substituir a leitura bíblica ou a comunidade cristã.</p>
+        </div>
+      </section>
+    </template>
+    <!-- O script cuida da navegação SPA e da leitura do conteúdo. -->
+    <script src="js/app.js" defer=""></script>
+    <!-- A configuração segura de login/banco de dados fica em outro arquivo. -->
+    <script type="module" src="js/firebase.js"></script>
+  </body>
+</html>

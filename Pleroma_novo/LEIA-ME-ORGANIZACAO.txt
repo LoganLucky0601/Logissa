@@ -1,0 +1,5 @@
+PLÉROMA — Avaliação 04 | organização do código
+
+Somente index.html e css/style.css foram formatados e comentados.
+Nenhum valor CSS, seletor, atributo HTML ou código JavaScript foi alterado.
+O projeto original no GitHub permanece intacto.

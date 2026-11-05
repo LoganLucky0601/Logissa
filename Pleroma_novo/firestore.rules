@@ -1,0 +1,24 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /configuracaoPublica/inspiracao {
+      // Leitura pública: visitantes veem a mensagem atualizada.
+      allow read: if true;
+      // SOMENTE a conta Google aprovada pode publicar.
+      // SUBSTITUA o texto abaixo pelo UID real do administrador.
+      allow create, update: if request.auth != null
+        && request.auth.uid == 'COLE_UID_DO_ADMINISTRADOR'
+        && request.auth.token.email_verified == true
+        && request.resource.data.keys().hasOnly(['texto', 'referencia'])
+        && request.resource.data.texto is string
+        && request.resource.data.referencia is string
+        && request.resource.data.texto.size() > 0
+        && request.resource.data.texto.size() <= 260
+        && request.resource.data.referencia.size() > 0
+        && request.resource.data.referencia.size() <= 90;
+      allow delete: if false;
+    }
+    // Não permitir outros documentos por padrão.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

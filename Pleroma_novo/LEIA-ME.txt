@@ -1,0 +1,18 @@
+PLÉROMA — Avaliação 04 (SPA + preparação para administração Google)
+
+ARQUIVOS
+- index.html: cabeçalho, template da página inicial e rodapé fixos.
+- css/style.css: estilos originais e acréscimos para telas internas.
+- js/app.js: navegação em SPA e edição do card.
+- js/firebase.js: integração opcional com autenticação Google + Firestore.
+- js/firebase-config.js: campos de configuração a preencher.
+- firestore.rules: regras para escrita exclusiva do administrador.
+- CONFIGURAR-FIREBASE.md: passo a passo para ativar a edição segura.
+
+PARA TESTAR
+Abra index.html em um servidor local (por exemplo, Live Server do VS Code).
+O menu e as páginas funcionam imediatamente. O login e a publicação requerem
+configuração Firebase. Nenhum arquivo do projeto antigo foi substituído.
+
+OBS.: rotas do tipo #pregacoes/temas atualizam apenas <main> e preservam
+cabeçalho e rodapé. A logo retorna à tela inicial e ao topo.
